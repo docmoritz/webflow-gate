@@ -16,7 +16,7 @@ AWEBER_ACCOUNT_ID: str = os.environ.get("AWEBER_ACCOUNT_ID", "1450640")
 AWEBER_TOKEN_FILE: str = os.environ.get("AWEBER_TOKEN_FILE", "/data/aweber_tokens.json")
 
 TELEGRAM_BOT_TOKEN: str = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID: str = os.environ.get("TELEGRAM_CHAT_ID", "")
+TELEGRAM_CHAT_ID: str = os.environ.get("TELEGRAM_CHAT_ID") or os.environ.get("TELEGRAM_AUFSICHTSRAT_CHAT_ID", "")
 
 _forms_path = Path(__file__).parent.parent / "forms.yaml"
 
