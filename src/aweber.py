@@ -104,7 +104,7 @@ async def _add_subscriber(
         "ws.op": "create",
         "email": email,
         "name": f"{firstname} {lastname}".strip(),
-        "tags": tags,
+        "tags": __import__("json").dumps(tags),
         "update_existing": True,
         "ip_address": "127.0.0.1",
     }
