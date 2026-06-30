@@ -78,7 +78,7 @@ async def create_email_object(
         "personId": person_id,
     }
     resp = await client.post(
-        f"{TWENTY_BASE_URL}/rest/emailMessages",
+        f"{TWENTY_BASE_URL}/rest/emails",
         json=payload,
         headers=HEADERS,
     )
