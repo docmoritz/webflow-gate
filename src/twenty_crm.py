@@ -36,7 +36,7 @@ async def create_or_update_person(client: httpx.AsyncClient, submit: ParsedSubmi
         "emails": {"primaryEmail": submit.email},
     }
     if submit.consent:
-        payload["dsgvoConsentAt"] = datetime.now(timezone.utc).isoformat()
+        payload["dsgvoConsentAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     if existing:
         person_id = existing["id"]
