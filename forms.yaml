@@ -1,0 +1,15 @@
+forms:
+  "Formular Vorbereitungskurs HP":
+    welt: hp
+    field_map:
+      name_full: "Contact KursSHP Name"       # Variante 1 (Vollname → splitten)
+      firstname: "Contact KursSHP Firstname"  # Variante 2
+      lastname: "Contact Kurs SHP Lastname"
+      email: "Contact KursSHP Email"
+      message: "Contact KursSHP Message"
+      consent: "Contact KursSHP Checkbox"
+    twenty_crm:
+      create_person: true
+    aweber:
+      list_id: "6953991"
+      tags: ["sektoraler-hp"]
