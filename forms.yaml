@@ -13,3 +13,5 @@ forms:
     aweber:
       list_id: "6953991"
       tags: ["sektoraler-hp"]
+    ar_ablage:
+      empfaenger: "hp@docmoritz.academy"

@@ -18,6 +18,9 @@ AWEBER_TOKEN_FILE: str = os.environ.get("AWEBER_TOKEN_FILE", "/data/aweber_token
 TELEGRAM_BOT_TOKEN: str = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID: str = os.environ.get("TELEGRAM_CHAT_ID") or os.environ.get("TELEGRAM_AUFSICHTSRAT_CHAT_ID", "")
 
+MSC_EMAIL_GATE_URL: str = os.environ.get("MSC_EMAIL_GATE_URL", "")
+MSC_EMAIL_GATE_API_KEY: str = os.environ.get("MSC_EMAIL_GATE_API_KEY", "")
+
 _forms_path = Path(__file__).parent.parent / "forms.yaml"
 
 def load_forms() -> dict:
