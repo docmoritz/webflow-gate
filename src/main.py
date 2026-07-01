@@ -14,6 +14,7 @@ from .forms import parse_submit
 from .twenty_crm import handle_twenty_crm
 from .aweber import handle_aweber
 from .telegram import handle_telegram
+from .ar_ablage import handle_ar_ablage
 
 logging.basicConfig(
     level=logging.INFO,
@@ -69,6 +70,7 @@ async def webflow_form(request: Request, x_webflow_signature: str = Header(defau
         handle_twenty_crm(submit),
         handle_aweber(submit),
         handle_telegram(submit),
+        handle_ar_ablage(submit),
         return_exceptions=True,
     )
 
